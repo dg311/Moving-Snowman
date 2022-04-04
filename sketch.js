@@ -1,0 +1,35 @@
+function setup() {
+  createCanvas(10000,10000);
+}
+function draw() {
+  cursor(HAND);
+  rectMode(CENTER,CENTER);
+  stroke(0);
+  strokeWeight(1);
+  background(0,0,255);
+  fill(255);
+  ellipse(mouseX,mouseY,100,100);
+  ellipse(mouseX,mouseY-90,80,80)
+  ellipse(mouseX,mouseY-160,60,60);
+  fill(255,189,0);
+  triangle(mouseX,mouseY-155,mouseX,mouseY-165,mouseX+15,mouseY-160);
+  fill(0);
+  ellipse(mouseX-10,mouseY-170,10,10);
+  ellipse(mouseX+10,mouseY-170,10,10);
+  rect(mouseX,mouseY-195,80,10);
+  rect(mouseX,mouseY-225,60,60);
+  ellipse(mouseX-10,mouseY-150,10,10);
+  ellipse(mouseX-5,mouseY-145,10,10);
+  ellipse(mouseX+2,mouseY-143,10,10);
+  ellipse(mouseX+7,mouseY-145,10,10);
+  ellipse(mouseX+12,mouseY-150,10,10);
+  ellipse(mouseX,mouseY-90,20,20);
+  ellipse(mouseX,mouseY,20,20);
+  fill(255,0,0);
+  rect(mouseX,mouseY-130,70,10);
+  rect(mouseX+30,mouseY-80,10,90);
+  stroke(66,24,21);
+  strokeWeight(5);
+  line(mouseX+40,mouseY-90,mouseX+70,mouseY-60);
+  line(mouseX-40,mouseY-90,mouseX-70,mouseY-60);
+}
